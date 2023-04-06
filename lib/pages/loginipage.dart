@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tobacco_app/pages/welcome.dart';
 
 class LogInPage extends StatelessWidget {
   const LogInPage({super.key});
@@ -17,12 +18,23 @@ class LogInPage extends StatelessWidget {
                   padding: const EdgeInsets.only(left: 25),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
-                    children: const [
-                      Icon(Icons.arrow_back),
+                    children: [
+                      GestureDetector(onTap: () {
+                        Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const WelcomePage(),
+                      ),
+                    );
+                      },
+                        child: const Icon(Icons.arrow_back),
+                      ),
                     ],
                   ),
                 ),
-                const SizedBox(height: 30,),
+                const SizedBox(
+                  height: 30,
+                ),
                 //welcome text
                 const Padding(
                   padding: EdgeInsets.symmetric(
