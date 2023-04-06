@@ -134,7 +134,47 @@ class CreatePage extends StatelessWidget {
                     ),
                   ),
                 ),
-             
+                 const SizedBox(
+                  height: 10,
+                ),
+                Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: const [
+                      Text(
+                        ' Cooperative number',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 20),
+                      ),
+                    ],
+                  ),
+                ),
+
+                Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 25,
+                    vertical: 10,
+                  ),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.grey[200],
+                      border: Border.all(color: Colors.green),
+                      borderRadius: BorderRadius.circular(2),
+                    ),
+                    child: const Padding(
+                      padding: EdgeInsets.only(left: 20),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: 'Number',
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+               
 
                 // another input field
                 const SizedBox(
