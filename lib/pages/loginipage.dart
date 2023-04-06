@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tobacco_app/pages/create.dart';
 import 'package:tobacco_app/pages/welcome.dart';
 
 class LogInPage extends StatelessWidget {
@@ -148,12 +149,12 @@ class LogInPage extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 25),
                   child: GestureDetector(
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => const HomeScreen(),
-                      //   ),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const CreatePage(),
+                        ),
+                      );
                     },
                     child: Container(
                       padding: const EdgeInsets.all(20),

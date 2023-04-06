@@ -42,7 +42,7 @@ class CreatePage extends StatelessWidget {
                     horizontal: 25,
                   ),
                   child: Text(
-                    'WELCOME TO YOUR ACCOUNT',
+                    'CREATE FARMERS COOPERATE',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 24,
@@ -51,11 +51,7 @@ class CreatePage extends StatelessWidget {
                   ),
                 ),
 
-                //picture of the app
-                const Icon(
-                  Icons.person,
-                  size: 150,
-                ),
+                
 
                 //email text field
                 const SizedBox(
@@ -164,7 +160,7 @@ class CreatePage extends StatelessWidget {
                       ),
                       child: const Center(
                         child: Text(
-                          'SIGN IN',
+                          'CREATE',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -180,21 +176,7 @@ class CreatePage extends StatelessWidget {
                 ),
 
                 //register
-                Padding(
-                  padding: const EdgeInsets.only(right: 25),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      Text(
-                        '  Forgot Password? ',
-                        style: TextStyle(
-                          color: Colors.blue[400],
-                          fontWeight: FontWeight.bold,
-                        ),
-                      )
-                    ],
-                  ),
-                )
+               
               ],
             ),
           ),
