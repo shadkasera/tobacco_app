@@ -20,14 +20,15 @@ class CreatePage extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      GestureDetector(onTap: () {
-                        Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const LogInPage(),
-                      ),
-                    );
-                      },
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const LogInPage(),
+                            ),
+                          );
+                        },
                         child: const Icon(Icons.arrow_back),
                       ),
                     ],
@@ -51,8 +52,6 @@ class CreatePage extends StatelessWidget {
                   ),
                 ),
 
-                
-
                 //email text field
                 const SizedBox(
                   height: 60,
@@ -65,7 +64,7 @@ class CreatePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: const [
                       Text(
-                        ' Enter your Email',
+                        ' Name of cooperative',
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 20),
                       ),
@@ -88,7 +87,7 @@ class CreatePage extends StatelessWidget {
                       child: TextField(
                         decoration: InputDecoration(
                           border: InputBorder.none,
-                          hintText: 'Email',
+                          hintText: 'Name',
                         ),
                       ),
                     ),
@@ -105,7 +104,7 @@ class CreatePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: const [
                       Text(
-                        ' Enter your Password',
+                        ' Cooperative number',
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 20),
                       ),
@@ -127,10 +126,94 @@ class CreatePage extends StatelessWidget {
                     child: const Padding(
                       padding: EdgeInsets.only(left: 20),
                       child: TextField(
-                        obscureText: true,
                         decoration: InputDecoration(
                           border: InputBorder.none,
-                          hintText: 'Password',
+                          hintText: 'Number',
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+             
+
+                // another input field
+                const SizedBox(
+                  height: 10,
+                ),
+                Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: const [
+                      Text(
+                        ' Cooperative number',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 20),
+                      ),
+                    ],
+                  ),
+                ),
+
+                Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 25,
+                    vertical: 10,
+                  ),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.grey[200],
+                      border: Border.all(color: Colors.green),
+                      borderRadius: BorderRadius.circular(2),
+                    ),
+                    child: const Padding(
+                      padding: EdgeInsets.only(left: 20),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: 'Number',
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+
+                //another input
+                 const SizedBox(
+                  height: 10,
+                ),
+                Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: const [
+                      Text(
+                        ' Cooperative number',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 20),
+                      ),
+                    ],
+                  ),
+                ),
+
+                Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 25,
+                    vertical: 10,
+                  ),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.grey[200],
+                      border: Border.all(color: Colors.green),
+                      borderRadius: BorderRadius.circular(2),
+                    ),
+                    child: const Padding(
+                      padding: EdgeInsets.only(left: 20),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: 'Number',
                         ),
                       ),
                     ),
@@ -140,6 +223,7 @@ class CreatePage extends StatelessWidget {
                 const SizedBox(
                   height: 40,
                 ),
+                
 
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 25),
@@ -176,7 +260,6 @@ class CreatePage extends StatelessWidget {
                 ),
 
                 //register
-               
               ],
             ),
           ),
