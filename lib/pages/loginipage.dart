@@ -13,11 +13,16 @@ class LogInPage extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Row(mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    const Icon(Icons.arrow_back),
-                  ],
+                Padding(
+                  padding: const EdgeInsets.only(left: 25),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: const [
+                      Icon(Icons.arrow_back),
+                    ],
+                  ),
                 ),
+                const SizedBox(height: 30,),
                 //welcome text
                 const Padding(
                   padding: EdgeInsets.symmetric(
