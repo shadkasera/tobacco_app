@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tobacco_app/pages/homescreen.dart';
+import 'package:tobacco_app/pages/loginipage.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
@@ -69,7 +69,7 @@ class WelcomePage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const HomeScreen(),
+                        builder: (context) => const LogInPage(),
                       ),
                     );
                   },
