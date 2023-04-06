@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tobacco_app/pages/loginipage.dart';
-import 'package:tobacco_app/pages/welcome.dart';
+
 
 class CreatePage extends StatelessWidget {
   const CreatePage({super.key});
@@ -64,7 +64,7 @@ class CreatePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: const [
                       Text(
-                        ' Name of cooperative',
+                        ' Name of cooperative:',
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 20),
                       ),
@@ -104,7 +104,7 @@ class CreatePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: const [
                       Text(
-                        ' Cooperative number',
+                        ' Cooperative number:',
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 20),
                       ),
@@ -144,7 +144,7 @@ class CreatePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: const [
                       Text(
-                        ' Cooperative number',
+                        ' Cooperative representative:',
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 20),
                       ),
@@ -168,7 +168,7 @@ class CreatePage extends StatelessWidget {
                       child: TextField(
                         decoration: InputDecoration(
                           border: InputBorder.none,
-                          hintText: 'Number',
+                          hintText: 'Coopeerative representative',
                         ),
                       ),
                     ),
@@ -187,7 +187,7 @@ class CreatePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: const [
                       Text(
-                        ' Cooperative number',
+                        ' District:',
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 20),
                       ),
@@ -211,7 +211,7 @@ class CreatePage extends StatelessWidget {
                       child: TextField(
                         decoration: InputDecoration(
                           border: InputBorder.none,
-                          hintText: 'Number',
+                          hintText: 'District',
                         ),
                       ),
                     ),
@@ -229,7 +229,7 @@ class CreatePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: const [
                       Text(
-                        ' Cooperative number',
+                        ' Village:',
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 20),
                       ),
@@ -253,7 +253,7 @@ class CreatePage extends StatelessWidget {
                       child: TextField(
                         decoration: InputDecoration(
                           border: InputBorder.none,
-                          hintText: 'Number',
+                          hintText: 'Village',
                         ),
                       ),
                     ),
