@@ -26,6 +26,20 @@ class WelcomePage extends StatelessWidget {
                   ),
                 ),
               ),
+              //picture of the app
+
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 30),
+                child: ClipOval(
+                  child: Image.asset(
+                    'assets/images/tobacco0.png',
+                    height: 230,
+                  ),
+                ),
+              ),
+              //text
+
+              
               const SizedBox(height: 40),
               const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 45),
@@ -34,23 +48,14 @@ class WelcomePage extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 20,
                     color: Colors.black87,
+                    height: 1.5,
                   ),
                 ),
               ),
-              //picture of the app
 
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25),
-                child: ClipOval(
-                  child: Image.asset(
-                    'assets/images/tobacco0.png',
-                    height: 300,
-                  ),
-                ),
-              ),
               //email text field
               const SizedBox(
-                height: 40,
+                height: 80,
               ),
 
               //password text field
@@ -58,7 +63,7 @@ class WelcomePage extends StatelessWidget {
               //sign in
 
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25),
+                padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
                 child: GestureDetector(
                   onTap: () {
                     Navigator.push(
