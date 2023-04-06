@@ -13,6 +13,11 @@ class LogInPage extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                Row(mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    const Icon(Icons.arrow_back),
+                  ],
+                ),
                 //welcome text
                 const Padding(
                   padding: EdgeInsets.symmetric(
@@ -29,7 +34,10 @@ class LogInPage extends StatelessWidget {
                 ),
 
                 //picture of the app
-                const Icon(Icons.person),
+                const Icon(
+                  Icons.person,
+                  size: 150,
+                ),
 
                 //email text field
                 const SizedBox(
@@ -116,7 +124,7 @@ class LogInPage extends StatelessWidget {
                 ),
                 //sign in
                 const SizedBox(
-                  height: 10,
+                  height: 40,
                 ),
 
                 Padding(
@@ -138,11 +146,11 @@ class LogInPage extends StatelessWidget {
                       ),
                       child: const Center(
                         child: Text(
-                          'Sign In',
+                          'SIGN IN',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
-                            fontSize: 18,
+                            fontSize: 20,
                           ),
                         ),
                       ),
@@ -159,7 +167,6 @@ class LogInPage extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                   
                       Text(
                         '  Forgot Password? ',
                         style: TextStyle(
