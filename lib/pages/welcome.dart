@@ -22,17 +22,18 @@ class WelcomePage extends StatelessWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
+                    color: Colors.green,
                   ),
                 ),
               ),
               const SizedBox(height: 40),
               const Padding(
-                padding: EdgeInsets.symmetric(horizontal: 25),
+                padding: EdgeInsets.symmetric(horizontal: 45),
                 child: Text(
                   'Promotng and developing the tobacco industry in Malawi and advance the interest of tobacco growers',
                   style: TextStyle(
                     fontSize: 20,
-                    color: Colors.green,
+                    color: Colors.black87,
                   ),
                 ),
               ),
