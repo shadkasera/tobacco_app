@@ -83,7 +83,7 @@ class LogInPage extends StatelessWidget {
                   ),
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Colors.grey[100],
+                      color: Colors.grey[200],
                       border: Border.all(color: Colors.green),
                       borderRadius: BorderRadius.circular(2),
                     ),
@@ -100,7 +100,7 @@ class LogInPage extends StatelessWidget {
                 ),
                 //password text field
                 const SizedBox(
-                  height: 10,
+                  height: 5,
                 ),
                 Padding(
                   padding:
