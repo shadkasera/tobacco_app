@@ -83,16 +83,16 @@ class LogInPage extends StatelessWidget {
                   ),
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Colors.grey[200],
+                      color: Colors.grey[100],
                       border: Border.all(color: Colors.green),
                       borderRadius: BorderRadius.circular(2),
                     ),
                     child: const Padding(
                       padding: EdgeInsets.only(left: 20),
                       child: TextField(
-                        decoration: InputDecoration(
+                        decoration: InputDecoration( 
                           border: InputBorder.none,
-                          hintText: 'Email',
+                          hintText: 'Email here',
                         ),
                       ),
                     ),
