@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:tobacco_app/pages/addmembers.dart';
+import 'package:tobacco_app/pages/budget.dart';
 import 'package:tobacco_app/pages/create.dart';
 
-class RegisterdCooperative extends StatelessWidget {
-  const RegisterdCooperative({super.key});
+class RegisterdMembers extends StatelessWidget {
+  const RegisterdMembers({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +44,7 @@ class RegisterdCooperative extends StatelessWidget {
                     horizontal: 25,
                   ),
                   child: Text(
-                    'REGISTERD COOPERATIVES',
+                    'COOPERATIVE ONE',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 24,
@@ -65,30 +66,33 @@ class RegisterdCooperative extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         const Text(
-                          'COOPERATIVE ONE ',
+                          'REGISTERD MEMBERS ',
                           style: TextStyle(
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
                             fontSize: 20,
                           ),
                         ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                       
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            const Text(
-                              '345233',
-                              style: TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 10,
-                              ),
-                            ),
+                             const Text(
+                          ' ADRIAN NKHATA ',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 10,
+                          ),
+                        ),
                             ElevatedButton(
                               onPressed: () {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => const AddMembers(),
+                                    builder: (context) => const BudgetPage(),
                                   ),
                                 );
                               },
@@ -97,7 +101,7 @@ class RegisterdCooperative extends StatelessWidget {
                                 elevation: 4,
                               ),
                               child: const Text(
-                                'ADD MEMBER',
+                                'BUDGET',
                                 style: TextStyle(
                                   color: Colors.black,
                                   fontWeight: FontWeight.bold,
@@ -106,31 +110,85 @@ class RegisterdCooperative extends StatelessWidget {
                               ),
                             ),
                             ElevatedButton(
+                          onPressed: () {
+                            // Navigator.push(
+                            //   context,
+                            //   MaterialPageRoute(
+                            //     builder: (context) => const AddMembers(),
+                            //   ),
+                            // );
+                          },
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.green,
+                            elevation: 4,
+                          ),
+                          child: const Text(
+                            'DEREGESTER',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 7,
+                            ),
+                          ),
+                        )
+                          ],
+                        ),
+                        
+                        Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                             const Text(
+                          ' ADRIAN NKHATA ',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 10,
+                          ),
+                        ),
+                            ElevatedButton(
                               onPressed: () {
-                                // Navigator.push(
-                                //   context,
-                                //   MaterialPageRoute(
-                                //     builder: (context) => const AddMembers(),
-                                //   ),
-                                // );
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => const BudgetPage(),
+                                  ),
+                                );
                               },
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: Colors.green,
                                 elevation: 4,
                               ),
                               child: const Text(
-                                'DEREGESTER',
+                                'BUDGET',
                                 style: TextStyle(
                                   color: Colors.black,
                                   fontWeight: FontWeight.bold,
                                   fontSize: 7,
                                 ),
                               ),
-                            )
+                            ),
+                            ElevatedButton(
+                          onPressed: () {
+                            // Navigator.push(
+                            //   context,
+                            //   MaterialPageRoute(
+                            //     builder: (context) => const AddMembers(),
+                            //   ),
+                            // );
+                          },
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.green,
+                            elevation: 4,
+                          ),
+                          child: const Text(
+                            'DEREGESTER',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 7,
+                            ),
+                          ),
+                        )
                           ],
-                        ),
-                        const SizedBox(
-                          height: 20,
                         ),
                       ],
                     ),
@@ -140,7 +198,7 @@ class RegisterdCooperative extends StatelessWidget {
                   height: 10,
                 ),
 
-               
+                
                 Padding(
                   padding:
                       const EdgeInsets.symmetric(horizontal: 25, vertical: 20),
@@ -149,7 +207,7 @@ class RegisterdCooperative extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const AddMembers(),
+                          builder: (context) => const CreatePage(),
                         ),
                       );
                     },

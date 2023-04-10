@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:tobacco_app/pages/loginipage.dart';
-import 'package:tobacco_app/pages/registerdmembers.dart';
+import 'package:tobacco_app/pages/registerdcooperative.dart';
 
-
-class AddMembers extends StatelessWidget {
-  const AddMembers({super.key});
+class BudgetPage extends StatelessWidget {
+  const BudgetPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +43,7 @@ class AddMembers extends StatelessWidget {
                     horizontal: 25,
                   ),
                   child: Text(
-                    'ADD MEMBERS',
+                    'BUDGET',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 24,
@@ -65,7 +64,7 @@ class AddMembers extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: const [
                       Text(
-                        ' NATIONAL ID',
+                        'FARM AREA',
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 20),
                       ),
@@ -88,7 +87,7 @@ class AddMembers extends StatelessWidget {
                       child: TextField(
                         decoration: InputDecoration(
                           border: InputBorder.none,
-                          hintText: 'National ID',
+                          hintText: 'Farm area',
                         ),
                       ),
                     ),
@@ -105,7 +104,7 @@ class AddMembers extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: const [
                       Text(
-                        ' Name:',
+                        'BAGS OF FERTILIZER',
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 20),
                       ),
@@ -129,13 +128,13 @@ class AddMembers extends StatelessWidget {
                       child: TextField(
                         decoration: InputDecoration(
                           border: InputBorder.none,
-                          hintText: 'Name',
+                          hintText: 'Bags of fertlizer',
                         ),
                       ),
                     ),
                   ),
                 ),
-                 const SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Padding(
@@ -145,7 +144,7 @@ class AddMembers extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: const [
                       Text(
-                        ' Surname',
+                        'AMOUNT OF SEEDS',
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 20),
                       ),
@@ -169,13 +168,12 @@ class AddMembers extends StatelessWidget {
                       child: TextField(
                         decoration: InputDecoration(
                           border: InputBorder.none,
-                          hintText: 'Surname',
+                          hintText: 'Amount of seeds',
                         ),
                       ),
                     ),
                   ),
                 ),
-               
 
                 // another input field
                 const SizedBox(
@@ -188,7 +186,7 @@ class AddMembers extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: const [
                       Text(
-                        ' Photo',
+                        'PESTICIDES',
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 20),
                       ),
@@ -212,7 +210,7 @@ class AddMembers extends StatelessWidget {
                       child: TextField(
                         decoration: InputDecoration(
                           border: InputBorder.none,
-                          hintText: 'Upload your Photo',
+                          hintText: 'Pesticides',
                         ),
                       ),
                     ),
@@ -220,51 +218,9 @@ class AddMembers extends StatelessWidget {
                 ),
 
                 //another input
-                 const SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: const [
-                      Text(
-                        ' Date of joining',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      ),
-                    ],
-                  ),
-                ),
-
-                Padding(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 25,
-                    vertical: 10,
-                  ),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.grey[200],
-                      border: Border.all(color: Colors.green),
-                      borderRadius: BorderRadius.circular(2),
-                    ),
-                    child: const Padding(
-                      padding: EdgeInsets.only(left: 20),
-                      child: TextField(
-                        decoration: InputDecoration(
-                          border: InputBorder.none,
-                          hintText: 'date of joining',
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-                //sign in
-                const SizedBox(
-                  height: 40,
-                ),
-                
 
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 25),
@@ -273,7 +229,7 @@ class AddMembers extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const RegisterdMembers(),
+                          builder: (context) => const RegisterdCooperative(),
                         ),
                       );
                     },
@@ -285,7 +241,7 @@ class AddMembers extends StatelessWidget {
                       ),
                       child: const Center(
                         child: Text(
-                          'REGISTER MEMBER',
+                          'BUDGET',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
