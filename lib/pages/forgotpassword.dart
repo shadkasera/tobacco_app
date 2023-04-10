@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:tobacco_app/pages/create.dart';
-import 'package:tobacco_app/pages/forgotpassword.dart';
+import 'package:tobacco_app/pages/loginipage.dart';
 import 'package:tobacco_app/pages/welcome.dart';
 
-class LogInPage extends StatelessWidget {
-  const LogInPage({super.key});
+class ForgotpasswordPage extends StatelessWidget {
+  const ForgotpasswordPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class LogInPage extends StatelessWidget {
                         Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const WelcomePage(),
+                        builder: (context) => const LogInPage(),
                       ),
                     );
                       },
@@ -43,7 +43,7 @@ class LogInPage extends StatelessWidget {
                     horizontal: 25,
                   ),
                   child: Text(
-                    'WELCOME TO YOUR ACCOUNT',
+                    'FORGOT PASSWORD',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 24,
@@ -52,53 +52,12 @@ class LogInPage extends StatelessWidget {
                   ),
                 ),
 
-                //picture of the app
-                const Icon(
-                  Icons.person,
-                  size: 150,
-                ),
-
+              
                 //email text field
                 const SizedBox(
                   height: 60,
                 ),
 
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: const [
-                      Text(
-                        ' Enter your Email',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      ),
-                    ],
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 25,
-                    vertical: 10,
-                  ),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.grey[200],
-                      border: Border.all(color: Colors.green),
-                      borderRadius: BorderRadius.circular(2),
-                    ),
-                    child: const Padding(
-                      padding: EdgeInsets.only(left: 20),
-                      child: TextField(
-                        decoration: InputDecoration( 
-                          border: InputBorder.none,
-                          hintText: 'Email here',
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
                 //password text field
                 const SizedBox(
                   height: 5,
@@ -153,7 +112,7 @@ class LogInPage extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const CreatePage(),
+                          builder: (context) => const LogInPage(),
                         ),
                       );
                     },
@@ -165,7 +124,7 @@ class LogInPage extends StatelessWidget {
                       ),
                       child: const Center(
                         child: Text(
-                          'SIGN IN',
+                          'RESET PASSWORD',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -181,30 +140,7 @@ class LogInPage extends StatelessWidget {
                 ),
 
                 //register
-                Padding(
-                  padding: const EdgeInsets.only(right: 25),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      GestureDetector(onTap: () {
-                        Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const ForgotpasswordPage(),
-                        ),
-                      );
-                      },
-                        child: Text(
-                          '  Forgot Password? ',
-                          style: TextStyle(
-                            color: Colors.blue[400],
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      )
-                    ],
-                  ),
-                )
+               
               ],
             ),
           ),
