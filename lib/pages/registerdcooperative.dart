@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:tobacco_app/pages/addmembers.dart';
 import 'package:tobacco_app/pages/create.dart';
-import 'package:tobacco_app/pages/loginipage.dart';
-import 'package:tobacco_app/pages/welcome.dart';
 
 class RegisterdCooperative extends StatelessWidget {
   const RegisterdCooperative({super.key});
@@ -89,7 +88,7 @@ class RegisterdCooperative extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => const CreatePage(),
+                                builder: (context) => const AddMembers(),
                               ),
                             );
                           },
@@ -150,7 +149,7 @@ class RegisterdCooperative extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => const CreatePage(),
+                                builder: (context) => const AddMembers(),
                               ),
                             );
                           },
@@ -171,7 +170,7 @@ class RegisterdCooperative extends StatelessWidget {
                     ),
                   ),
                 ),
- Padding(
+                Padding(
                   padding:
                       const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
                   child: Container(
@@ -207,7 +206,7 @@ class RegisterdCooperative extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => const CreatePage(),
+                                builder: (context) => const AddMembers(),
                               ),
                             );
                           },
@@ -237,7 +236,7 @@ class RegisterdCooperative extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const CreatePage(),
+                          builder: (context) => const AddMembers(),
                         ),
                       );
                     },
