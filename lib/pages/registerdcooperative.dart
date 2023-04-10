@@ -25,7 +25,7 @@ class RegisterdCooperative extends StatelessWidget {
                         Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const LogInPage(),
+                        builder: (context) => const CreatePage(),
                       ),
                     );
                       },
@@ -72,7 +72,7 @@ class RegisterdCooperative extends StatelessWidget {
                       padding: const EdgeInsets.all(60),
                       decoration: BoxDecoration(
                         color: Colors.grey[100],
-                        borderRadius: BorderRadius.circular(2),
+                        borderRadius: BorderRadius.circular(10),
                       ),
                       child:  Center(
                         child: Column(
