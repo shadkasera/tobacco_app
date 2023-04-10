@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tobacco_app/pages/loginipage.dart';
+import 'package:tobacco_app/pages/registerdcooperative.dart';
 
 
 class CreatePage extends StatelessWidget {
@@ -269,12 +270,12 @@ class CreatePage extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 25),
                   child: GestureDetector(
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => const HomeScreen(),
-                      //   ),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const RegisterdCooperative(),
+                        ),
+                      );
                     },
                     child: Container(
                       padding: const EdgeInsets.all(20),
