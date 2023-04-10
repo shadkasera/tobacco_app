@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tobacco_app/pages/addmembers.dart';
 import 'package:tobacco_app/pages/budget.dart';
 import 'package:tobacco_app/pages/create.dart';
+import 'package:tobacco_app/pages/registerdcooperative.dart';
 
 class RegisterdMembers extends StatelessWidget {
   const RegisterdMembers({super.key});
@@ -26,7 +27,7 @@ class RegisterdMembers extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => const CreatePage(),
+                              builder: (context) => const RegisterdCooperative(),
                             ),
                           );
                         },

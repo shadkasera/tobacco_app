@@ -26,7 +26,7 @@ class AddMembers extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => const LogInPage(),
+                              builder: (context) => const RegisterdMembers(),
                             ),
                           );
                         },

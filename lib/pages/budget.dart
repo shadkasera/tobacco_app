@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tobacco_app/pages/loginipage.dart';
 import 'package:tobacco_app/pages/registerdcooperative.dart';
+import 'package:tobacco_app/pages/registerdmembers.dart';
 
 class BudgetPage extends StatelessWidget {
   const BudgetPage({super.key});
@@ -25,7 +26,7 @@ class BudgetPage extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => const LogInPage(),
+                              builder: (context) => const RegisterdMembers(),
                             ),
                           );
                         },
