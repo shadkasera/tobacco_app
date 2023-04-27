@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tobacco_app/pages/create.dart';
+
 import 'package:tobacco_app/pages/loginipage.dart';
-import 'package:tobacco_app/pages/welcome.dart';
 
 class ForgotpasswordPage extends StatelessWidget {
   const ForgotpasswordPage({super.key});

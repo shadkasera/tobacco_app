@@ -21,14 +21,15 @@ class LogInPage extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      GestureDetector(onTap: () {
-                        Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const WelcomePage(),
-                      ),
-                    );
-                      },
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const WelcomePage(),
+                            ),
+                          );
+                        },
                         child: const Icon(Icons.arrow_back),
                       ),
                     ],
@@ -91,7 +92,7 @@ class LogInPage extends StatelessWidget {
                     child: const Padding(
                       padding: EdgeInsets.only(left: 20),
                       child: TextField(
-                        decoration: InputDecoration( 
+                        decoration: InputDecoration(
                           border: InputBorder.none,
                           hintText: 'Email here',
                         ),
@@ -165,7 +166,7 @@ class LogInPage extends StatelessWidget {
                       ),
                       child: const Center(
                         child: Text(
-                          'SIGN IN',
+                          'LOG IN',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -186,14 +187,15 @@ class LogInPage extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      GestureDetector(onTap: () {
-                        Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const ForgotpasswordPage(),
-                        ),
-                      );
-                      },
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const ForgotpasswordPage(),
+                            ),
+                          );
+                        },
                         child: Text(
                           '  Forgot Password? ',
                           style: TextStyle(
@@ -204,7 +206,23 @@ class LogInPage extends StatelessWidget {
                       )
                     ],
                   ),
-                )
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+                  child: Row(
+                    children: [
+                      const Text(
+                        'Dont\'t have an account?',
+                        style: TextStyle(fontSize: 20),
+                      ),
+                      const Text(
+                        ' Sign Up',
+                        style:
+                            TextStyle(fontSize: 20, fontWeight: FontWeight.bold,color: Colors.green),
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
           ),

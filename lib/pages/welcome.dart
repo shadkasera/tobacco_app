@@ -44,7 +44,7 @@ class WelcomePage extends StatelessWidget {
               const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 45),
                 child: Text(
-                  'Promotng and developing the tobacco industry in Malawi and advance the interest of tobacco growers',
+                  'Promoting and developing the tobacco industry in Malawi and advance the interest of tobacco growers',
                   style: TextStyle(
                     fontSize: 20,
                     color: Colors.black87,
