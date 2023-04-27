@@ -149,7 +149,7 @@ class RegisterdCooperative extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const AddMembers(),
+                          builder: (context) => const CreatePage(),
                         ),
                       );
                     },

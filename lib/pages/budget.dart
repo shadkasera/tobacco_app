@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tobacco_app/pages/create.dart';
 import 'package:tobacco_app/pages/loginipage.dart';
 import 'package:tobacco_app/pages/registerdcooperative.dart';
 import 'package:tobacco_app/pages/registerdmembers.dart';
@@ -26,7 +27,7 @@ class BudgetPage extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => const RegisterdMembers(),
+                              builder: (context) => const CreatePage(),
                             ),
                           );
                         },
@@ -227,12 +228,12 @@ class BudgetPage extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 25),
                   child: GestureDetector(
                     onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const RegisterdCooperative(),
-                        ),
-                      );
+                      // Navigator.push(
+                      //   context,
+                      //   MaterialPageRoute(
+                      //     builder: (context) => const RegisterdCooperative(),
+                      //   ),
+                      // );
                     },
                     child: Container(
                       padding: const EdgeInsets.all(20),
@@ -242,7 +243,7 @@ class BudgetPage extends StatelessWidget {
                       ),
                       child: const Center(
                         child: Text(
-                          'BUDGET',
+                          'CONFIRM',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
