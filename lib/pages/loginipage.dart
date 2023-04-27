@@ -143,12 +143,10 @@ class LogInPage extends StatelessWidget {
                   ),
                 ),
                 //sign in
-                const SizedBox(
-                  height: 40,
-                ),
-
+               
+               
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 25),
+                  padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 20),
                   child: GestureDetector(
                     onTap: () {
                       Navigator.push(
@@ -162,7 +160,7 @@ class LogInPage extends StatelessWidget {
                       padding: const EdgeInsets.all(20),
                       decoration: BoxDecoration(
                         color: Colors.green,
-                        borderRadius: BorderRadius.circular(2),
+                        borderRadius: BorderRadius.circular(10),
                       ),
                       child: const Center(
                         child: Text(
@@ -180,45 +178,30 @@ class LogInPage extends StatelessWidget {
                 const SizedBox(
                   height: 30,
                 ),
-
-                //register
-                Padding(
-                  padding: const EdgeInsets.only(right: 25),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const ForgotpasswordPage(),
-                            ),
-                          );
-                        },
-                        child: Text(
-                          '  Forgot Password? ',
-                          style: TextStyle(
-                            color: Colors.blue[400],
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      )
-                    ],
+ const Padding(
+                  padding: EdgeInsets.symmetric(vertical: 20),
+                  child: Text(
+                    'Forgot Password',
+                    style: TextStyle(fontSize: 20),
                   ),
                 ),
+                //register
+
                 Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
                   child: Row(
-                    children: [
-                      const Text(
+                    children: const [
+                      Text(
                         'Dont\'t have an account?',
                         style: TextStyle(fontSize: 20),
                       ),
-                      const Text(
+                      Text(
                         ' Sign Up',
-                        style:
-                            TextStyle(fontSize: 20, fontWeight: FontWeight.bold,color: Colors.green),
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.green),
                       ),
                     ],
                   ),
