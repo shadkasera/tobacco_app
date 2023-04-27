@@ -28,7 +28,7 @@ class ForgotpasswordPage extends StatelessWidget {
                       ),
                     );
                       },
-                        child: const Icon(Icons.arrow_back),
+                        child: const Icon(Icons.arrow_back,color: Colors.green,),
                       ),
                     ],
                   ),
