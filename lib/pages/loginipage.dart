@@ -95,7 +95,7 @@ class LogInPage extends StatelessWidget {
                       child: TextField(
                         decoration: InputDecoration(
                           border: InputBorder.none,
-                          hintText: 'Email here',
+                          hintText: 'Email ',
                         ),
                       ),
                     ),
@@ -112,7 +112,7 @@ class LogInPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: const [
                       Text(
-                        ' Enter your Password',
+                        ' Enter your Password!',
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 20),
                       ),
