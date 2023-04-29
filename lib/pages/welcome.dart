@@ -46,7 +46,7 @@ class WelcomePage extends StatelessWidget {
                 child: Text(
                   'Promoting and developing the tobacco industry in Malawi and advance the interest of tobacco growers',
                   style: TextStyle(
-                    fontSize: 20,
+                    fontSize: 22,
                     color: Colors.black87,
                     height: 1.5,
                   ),
@@ -55,7 +55,7 @@ class WelcomePage extends StatelessWidget {
 
               //email text field
               const SizedBox(
-                height: 80,
+                height: 70,
               ),
 
               //password text field
@@ -85,7 +85,7 @@ class WelcomePage extends StatelessWidget {
                         style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
-                          fontSize: 18,
+                          fontSize: 20,
                         ),
                       ),
                     ),
