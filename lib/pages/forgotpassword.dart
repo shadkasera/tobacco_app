@@ -34,7 +34,7 @@ class ForgotpasswordPage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  height: 30,
+                  height: 20,
                 ),
                 //welcome text
                 const Padding(
