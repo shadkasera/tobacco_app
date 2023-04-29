@@ -243,7 +243,7 @@ class BudgetPage extends StatelessWidget {
                       ),
                       child: const Center(
                         child: Text(
-                          'CONFIRM',
+                          'CONFIRM!',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -255,7 +255,7 @@ class BudgetPage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  height: 30,
+                  height: 20,
                 ),
 
                 //register
