@@ -31,7 +31,7 @@ class RegisterdMembers extends StatelessWidget {
                             ),
                           );
                         },
-                        child: const Icon(Icons.arrow_back),
+                        child: const Icon(Icons.arrow_back, color: Colors.black12,),
                       ),
                     ],
                   ),
